@@ -1,6 +1,5 @@
 package hibernate;
 
-import entity.Kategori;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -13,7 +12,7 @@ public class HibernateUtil {
         try {
             Configuration cfg = new Configuration();
 
-//            cfg.addAnnotatedClass(Kategori.class);
+//            cfg.addAnnotatedClass(Category.class);
 
             SessionFactory sessionFactory = cfg.configure("hibernate.cfg.xml").buildSessionFactory();
 
