@@ -1,6 +1,7 @@
 package dao;
 
 import base.BaseDao;
+import dto.ProductCommentDetailDto;
 import dto.ProductDetailDto;
 import entity.Product;
 import org.hibernate.query.Query;
@@ -88,5 +89,7 @@ public class ProductDao extends BaseDao {
 
         return query.list();
     }
+
+
 
 }

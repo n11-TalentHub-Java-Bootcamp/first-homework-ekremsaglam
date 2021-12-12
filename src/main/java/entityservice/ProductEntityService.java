@@ -39,4 +39,4 @@ public class ProductEntityService {
         return productDao.findAllProductDetailDtoByCategoryBranch(branch);
     }
 
-    }
+}
