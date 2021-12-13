@@ -1,51 +1,114 @@
 package dto;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class ProductCommentDetailDto {
-    private ProductDetailDto productDetailDto;
-    private UserInfoDetailDto userInfoDetailDto;
-    private CommentDetailDto commentDetailDto;
+    private String productName;
+    private String categoryName;
+    private BigDecimal productPrice;
+    private String name;
+    private String surName;
+    private String email;
+    private String phoneNumber;
+    private String commentText;
+    private Date commentDate;
 
     public ProductCommentDetailDto() {
     }
 
-    public ProductCommentDetailDto(ProductDetailDto productDetailDto, UserInfoDetailDto userInfoDetailDto, CommentDetailDto commentDetailDto) {
-        this.productDetailDto = productDetailDto;
-        this.userInfoDetailDto = userInfoDetailDto;
-        this.commentDetailDto = commentDetailDto;
+    public ProductCommentDetailDto(String productName, String categoryName, BigDecimal productPrice,
+                                   String name, String surName, String email, String phoneNumber,
+                                   String commentText, Date commentDate)
+    {
+        this.productName = productName;
+        this.categoryName = categoryName;
+        this.productPrice = productPrice;
+        this.name = name;
+        this.surName = surName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.commentText = commentText;
+        this.commentDate = commentDate;
     }
 
-    public ProductDetailDto getProductDetailDto() {
-        return productDetailDto;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setProductDetailDto(ProductDetailDto productDetailDto) {
-        this.productDetailDto = productDetailDto;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public UserInfoDetailDto getUserInfoDetailDto() {
-        return userInfoDetailDto;
+    public String getCategoryName() {
+        return categoryName;
     }
 
-    public void setUserInfoDetailDto(UserInfoDetailDto userInfoDetailDto) {
-        this.userInfoDetailDto = userInfoDetailDto;
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
-    public CommentDetailDto getCommentDetailDto() {
-        return commentDetailDto;
+    public BigDecimal getProductPrice() {
+        return productPrice;
     }
 
-    public void setCommentDetailDto(CommentDetailDto commentDetailDto) {
-        this.commentDetailDto = commentDetailDto;
+    public void setProductPrice(BigDecimal productPrice) {
+        this.productPrice = productPrice;
     }
 
-    @Override
-    public String toString() {
-        return "ProductCommentDetailDto{" +
-                "productDetailDto=" + productDetailDto.toString() +
-                ", userInfoDetailDto=" + userInfoDetailDto.toString() +
-                ", commentDetailDto=" + commentDetailDto.toString() +
-                '}';
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getCommentText() {
+        return commentText;
+    }
+
+    public void setCommentText(String commentText) {
+        this.commentText = commentText;
+    }
+
+    public Date getCommentDate() {
+        return commentDate;
+    }
+
+    public void setCommentDate(Date commentDate) {
+        this.commentDate = commentDate;
+    }
+
+
+
+
+
+
+
+
 }
