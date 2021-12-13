@@ -2,6 +2,7 @@ package dao;
 
 import base.BaseDao;
 import dto.ProductCommentDetailDto;
+import entityservice.ProductCommentEntityService;
 import org.hibernate.query.Query;
 
 import java.util.List;
@@ -55,5 +56,7 @@ public class CommentDao extends BaseDao {
 
         return query.list();
     }
+
+
 
 }

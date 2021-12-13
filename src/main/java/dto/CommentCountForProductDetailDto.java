@@ -6,15 +6,16 @@ public class CommentCountForProductDetailDto {
     private Long id;
     private String name;
     private BigDecimal price;
-    private Integer commentCount;
+    private Long commentCount;
 
     public CommentCountForProductDetailDto() {
     }
 
-    public CommentCountForProductDetailDto(Long id, String name, BigDecimal price) {
+    public CommentCountForProductDetailDto(Long id, String name, BigDecimal price,Long commentCount) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.commentCount=commentCount;
     }
 
     public Long getId() {
@@ -41,11 +42,11 @@ public class CommentCountForProductDetailDto {
         this.price = price;
     }
 
-    public Integer getCommentCount() {
+    public Long getCommentCount() {
         return commentCount;
     }
 
-    public void setCommentCount(Integer commentCount) {
+    public void setCommentCount(Long commentCount) {
         this.commentCount = commentCount;
     }
 }
